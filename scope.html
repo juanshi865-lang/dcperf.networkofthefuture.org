@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scope — DCperf Workshop</title>
+  <meta name="description" content="The scope, positioning, and research areas of the DCperf Workshop on Data Center Performance for Future Network Architectures.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="site-brand">
+      <div class="logo-icon">DC</div>
+      <div>
+        <a href="/" class="logo-text">DC<span class="accent">perf</span></a>
+        <span class="logo-sub">Workshop on Data Center Performance for Future Network Architectures</span>
+      </div>
+    </div>
+    <button class="menu-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')">☰</button>
+    <nav class="main-nav">
+      <a href="/">Home</a>
+      <a href="/news/">News</a>
+      <a href="/about.html">About</a>
+      <a href="/scope.html" class="active">Scope</a>
+      <a href="/icdcs.html">ICDCS Affiliation</a>
+    </nav>
+  </div>
+</div>
+
+<section class="page-section">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/">Home</a>
+      <span>→</span>
+      <span class="current">Scope</span>
+    </nav>
+
+    <h1>Scope &amp; Research Areas</h1>
+    <p class="lead">DCperf focuses on the performance optimization of data center and cloud-edge infrastructures, with an emphasis on architectures, algorithms, and systems that enable next-generation distributed applications.</p>
+
+    <h2>Workshop Scope</h2>
+    <p>The International Workshop on Data Center Performance for Future Network Architectures (DCperf) covers a broad range of topics at the intersection of data center infrastructure, cloud-edge computing, network performance, and distributed systems.</p>
+
+    <div class="content-card">
+      <h3>Core Research Areas</h3>
+      <ul>
+        <li><strong>Data Center Network Performance</strong> — Topology design, load balancing, traffic engineering, congestion control, Quality of Service (QoS) in data center networks</li>
+        <li><strong>Cloud-Edge Infrastructure</strong> — Multi-tier cloud-edge architectures, CDN performance optimization, edge caching strategies, latency-sensitive workload placement</li>
+        <li><strong>AI-Driven Infrastructure Management</strong> — Reinforcement learning for resource allocation, ML-based anomaly detection, predictive auto-scaling, intelligent traffic steering</li>
+        <li><strong>Distributed Systems Performance</strong> — Performance modeling and analysis of distributed storage, compute, and networking systems at global scale</li>
+        <li><strong>Software-Defined Infrastructure</strong> — SDN/NFV for data centers, programmable data planes (P4), service mesh and proxy performance (Envoy, eBPF)</li>
+        <li><strong>Content Delivery &amp; Application Acceleration</strong> — CDN architectures, DNS-based traffic management, edge proxy optimization, multi-CDN strategies</li>
+        <li><strong>Next-Generation Network Architectures</strong> — 5G/6G core networks, network slicing, cloud-native network functions, open RAN performance</li>
+        <li><strong>Observability &amp; Telemetry</strong> — Performance monitoring, distributed tracing, telemetry data processing, real-time analytics for infrastructure operations</li>
+      </ul>
+    </div>
+
+    <h2>Positioning</h2>
+    <p>DCperf is distinguished by its <strong>dual focus on performance and future architectures</strong>. While general distributed systems conferences cover a broad range of topics, DCperf provides a dedicated forum for research that specifically addresses the performance challenges of evolving data center and edge-cloud infrastructures — from core data centers to the network edge.</p>
+    <p>The workshop is particularly relevant to practitioners and researchers working on CDN infrastructure, cloud networking, edge computing platforms, and AI-driven operations — areas where performance optimization directly impacts user experience and operational efficiency.</p>
+
+    <div class="page-nav">
+      <a href="/about.html">← About the Award</a>
+      <a href="/icdcs.html">ICDCS Affiliation →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>DCperf Best Paper Award 2024</strong> — Official informational website</p>
+    <p><a href="https://dcperf.networkofthefuture.org">dcperf.networkofthefuture.org</a></p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var toggle = document.querySelector('.menu-toggle');
+  var nav = document.querySelector('.main-nav');
+  if (toggle) toggle.addEventListener('click', function() { nav.classList.toggle('open'); });
+  nav.querySelectorAll('a').forEach(function(l) { l.addEventListener('click', function() { nav.classList.remove('open'); }); });
+});
+</script>
+
+</body>
+</html>
