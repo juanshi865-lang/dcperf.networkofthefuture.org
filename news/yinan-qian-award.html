@@ -8,15 +8,11 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 </head>
 <body>
-
-<div class="top-bar">
-  <div class="container top-inner">
-    <div class="brand">
-      <div class="brand-mark">DC</div>
-      <span class="brand-name">DC<span class="hl">perf</span></span>
-    </div>
-    <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-    <nav class="nav-links">
+<header class="site-hdr">
+  <div class="container hdr-inner">
+    <div class="logo"><span style="color:var(--cyan);">◆</span> DC<span style="color:var(--cyan);">perf</span></div>
+    <button class="menu-btn" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+    <nav class="nav">
       <a href="/">Home</a>
       <a href="/news/" class="active">News</a>
       <a href="/about.html">About</a>
@@ -24,74 +20,71 @@
       <a href="/icdcs.html">ICDCS</a>
     </nav>
   </div>
-</div>
+</header>
 
-<div class="container page-wrap">
-  <main>
+<div class="container page-section">
+  <div class="breadcrumb"><a href="/">Home</a><span>→</span><a href="/news/">News</a><span>→</span><span>Yinan Qian</span></div>
 
-    <div class="article-hdr">
-      <div class="breadcrumbs"><a href="/">Home</a><span>→</span><a href="/news/">News</a><span>→</span><span class="cur">Yinan Qian</span></div>
-      <p class="date">23 July 2024</p>
-      <h1>DCperf 2024 Best Paper Award: Yinan Qian</h1>
-    </div>
-
-    <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.8;margin-bottom:16px;">The Organizing Committee of the <strong>International Workshop on Data Center Performance for Future Network Architectures (DCperf 2024)</strong> is pleased to announce that <strong>Yinan Qian</strong> has been selected to receive the <strong>DCperf 2024 Best Paper Award</strong>.</p>
-
-    <div class="hl-box">
-      <strong>⚡ Best Paper Award — DCperf 2024</strong><br>
-      <em>Adaptive Load Balancing for Multi-Tier CDN Edge Networks: A Reinforcement Learning Approach</em><br>
-      <strong>Author:</strong> Yinan Qian
-    </div>
-
-    <h2 style="font-family:var(--font-display);font-size:1.2rem;font-weight:600;margin:24px 0 10px;">Award Details</h2>
-    <div class="detail-grid">
-      <div class="row"><span class="lbl">Title</span><span class="val"><em>Adaptive Load Balancing for Multi-Tier CDN Edge Networks: A Reinforcement Learning Approach</em></span></div>
-      <div class="row"><span class="lbl">Author</span><span class="val">Yinan Qian (Pinterest, Inc. / Tufts University)</span></div>
-      <div class="row"><span class="lbl">Award</span><span class="val">Best Paper Award, DCperf 2024</span></div>
-      <div class="row"><span class="lbl">Date</span><span class="val">23 July 2024</span></div>
-      <div class="row"><span class="lbl">Workshop</span><span class="val">DCperf 2024 — held with IEEE ICDCS 2024</span></div>
-    </div>
-
-    <h2 style="font-family:var(--font-display);font-size:1.2rem;font-weight:600;margin:24px 0 10px;">About the Paper</h2>
-    <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.8;margin-bottom:12px;">The paper addresses a fundamental challenge in global-scale content delivery infrastructure: optimally distributing traffic across multi-tier CDN edge networks under dynamically changing load conditions while meeting strict latency requirements.</p>
-    <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.8;margin-bottom:12px;">Qian proposes a <strong>reinforcement learning framework</strong> that continuously learns and adapts load balancing policies based on real-time edge network conditions, traffic characteristics, and application-level performance requirements. The approach is validated using production-scale CDN traffic traces and demonstrates significant improvements in request distribution efficiency, reduced tail latency, and improved cache hit rates across multi-tier edge deployments.</p>
-
-    <h2 style="font-family:var(--font-display);font-size:1.2rem;font-weight:600;margin:24px 0 10px;">Selection</h2>
-    <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.8;">Selected by the DCperf 2024 TPC based on originality, technical quality, and potential impact. The award was presented during DCperf 2024, held in conjunction with the 44th IEEE ICDCS in Jersey City, NJ, USA.</p>
-
-  </main>
-
-  <aside>
-    <div class="stack-card">
-      <div class="stack-header"><span class="icon">📰</span><h4>Latest News</h4></div>
-      <div class="stack-body">
-        <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0;"><a href="/news/yinan-qian-award.html">DCperf 2024 Best Paper Award</a></p>
-      </div>
-    </div>
-    <div class="stack-card">
-      <div class="stack-header"><span class="icon">🔗</span><h4>Links</h4></div>
-      <div class="stack-body">
-        <p style="font-size:0.82rem;margin-bottom:4px;"><a href="/">← Back to Home</a></p>
-        <p style="font-size:0.82rem;margin-bottom:0;"><a href="/icdcs.html">ICDCS Affiliation →</a></p>
-      </div>
-    </div>
-  </aside>
-</div>
-
-<footer class="site-footer">
-  <div class="container">
-    <p><strong>DCperf Best Paper Award 2024</strong> — dcperf.networkofthefuture.org</p>
+  <div style="margin-bottom:20px;">
+    <p style="font-size:0.8rem;color:var(--cyan);font-weight:500;margin-bottom:4px;">23 July 2024</p>
+    <h1 style="font-family:var(--font-display);font-weight:700;font-size:1.5rem;color:var(--navy);line-height:1.2;">DCperf 2024 Best Paper Award:<br>Yinan Qian</h1>
   </div>
-</footer>
 
+  <p style="font-size:0.9rem;color:var(--slate-600);line-height:1.75;margin-bottom:16px;">The Organizing Committee of the <strong>International Workshop on Data Center Performance for Future Network Architectures (DCperf 2024)</strong> is pleased to announce that <strong>Yinan Qian</strong> has been selected to receive the <strong>DCperf 2024 Best Paper Award</strong> for outstanding research in adaptive, intelligent load balancing for multi-tier CDN edge networks.</p>
+
+  <div style="background:var(--slate-100);border-left:3px solid var(--cyan);padding:14px 18px;border-radius:0 6px 6px 0;margin-bottom:20px;">
+    <p style="font-size:0.88rem;margin-bottom:0;"><strong>⚡ Best Paper Award — DCperf 2024</strong><br>
+    <em>Adaptive Load Balancing for Multi-Tier CDN Edge Networks: A Reinforcement Learning Approach</em><br>
+    <strong>Author:</strong> Yinan Qian</p>
+  </div>
+
+  <h2 style="font-family:var(--font-display);font-weight:600;font-size:1.05rem;color:var(--navy);margin:24px 0 8px;">Award Details</h2>
+  <div style="margin-bottom:16px;">
+    <div style="display:flex;padding:6px 0;border-bottom:1px solid var(--border);font-size:0.85rem;">
+      <span style="flex:0 0 110px;font-weight:600;font-size:0.72rem;color:var(--slate-400);text-transform:uppercase;letter-spacing:0.06em;">Title</span>
+      <span style="flex:1;color:var(--slate-600);"><em>Adaptive Load Balancing for Multi-Tier CDN Edge Networks: A Reinforcement Learning Approach</em></span>
+    </div>
+    <div style="display:flex;padding:6px 0;border-bottom:1px solid var(--border);font-size:0.85rem;">
+      <span style="flex:0 0 110px;font-weight:600;font-size:0.72rem;color:var(--slate-400);text-transform:uppercase;letter-spacing:0.06em;">Author</span>
+      <span style="flex:1;color:var(--slate-600);">Yinan Qian (Pinterest, Inc. / Tufts University)</span>
+    </div>
+    <div style="display:flex;padding:6px 0;border-bottom:1px solid var(--border);font-size:0.85rem;">
+      <span style="flex:0 0 110px;font-weight:600;font-size:0.72rem;color:var(--slate-400);text-transform:uppercase;letter-spacing:0.06em;">Award</span>
+      <span style="flex:1;color:var(--slate-600);">Best Paper Award, DCperf 2024</span>
+    </div>
+    <div style="display:flex;padding:6px 0;border-bottom:1px solid var(--border);font-size:0.85rem;">
+      <span style="flex:0 0 110px;font-weight:600;font-size:0.72rem;color:var(--slate-400);text-transform:uppercase;letter-spacing:0.06em;">Date</span>
+      <span style="flex:1;color:var(--slate-600);">23 July 2024</span>
+    </div>
+    <div style="display:flex;padding:6px 0;border-bottom:1px solid var(--border);font-size:0.85rem;">
+      <span style="flex:0 0 110px;font-weight:600;font-size:0.72rem;color:var(--slate-400);text-transform:uppercase;letter-spacing:0.06em;">Workshop</span>
+      <span style="flex:1;color:var(--slate-600);">DCperf 2024 — held with IEEE ICDCS 2024</span>
+    </div>
+  </div>
+
+  <h2 style="font-family:var(--font-display);font-weight:600;font-size:1.05rem;color:var(--navy);margin:24px 0 8px;">About the Paper</h2>
+  <p style="font-size:0.9rem;color:var(--slate-600);line-height:1.75;margin-bottom:12px;">The paper addresses a fundamental challenge in global-scale content delivery: optimally distributing traffic across multi-tier CDN edge networks under dynamically changing load conditions while meeting strict latency requirements for modern web and mobile applications.</p>
+  <p style="font-size:0.9rem;color:var(--slate-600);line-height:1.75;margin-bottom:12px;">Qian proposes a <strong>reinforcement learning framework</strong> that continuously learns and adapts load balancing policies based on real-time edge network conditions, traffic characteristics, and application-level performance requirements. The approach is validated using production-scale CDN traffic traces and demonstrates significant improvements in request distribution efficiency, reduced tail latency, and improved cache hit rates across multi-tier edge deployments.</p>
+
+  <h2 style="font-family:var(--font-display);font-weight:600;font-size:1.05rem;color:var(--navy);margin:24px 0 8px;">Selection</h2>
+  <p style="font-size:0.9rem;color:var(--slate-600);line-height:1.75;">Selected by the DCperf 2024 Technical Program Committee based on originality, technical quality, and potential impact. The award was presented during DCperf 2024, held in conjunction with the 44th IEEE ICDCS in Jersey City, NJ, USA.</p>
+
+  <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--border);display:flex;justify-content:space-between;">
+    <a href="/news/">← All News</a>
+    <a href="/">Back to Home →</a>
+  </div>
+</div>
+
+<footer class="site-ftr">
+  <div class="container"><p><strong>DCperf Best Paper Award 2024</strong> — dcperf.networkofthefuture.org</p></div>
+</footer>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var btn = document.querySelector('.menu-btn');
-  var nav = document.querySelector('.nav-links');
+  var nav = document.querySelector('.nav');
   if (btn) btn.addEventListener('click', function() { nav.classList.toggle('open'); });
   nav.querySelectorAll('a').forEach(function(l) { l.addEventListener('click', function() { nav.classList.remove('open'); }); });
 });
 </script>
-
 </body>
 </html>
