@@ -116,8 +116,8 @@ def draw_certificate(c, doc):
     paper_y = name_y - 24*mm
     c.setFillColor(TEXT_PRIMARY)
     c.setFont("Helvetica-BoldOblique", 10)
-    c.drawCentredString(w/2, paper_y, "Adaptive Load Balancing for Multi-Tier CDN Edge Networks:")
-    c.drawCentredString(w/2, paper_y - 4*mm, "A Reinforcement Learning Approach")
+    c.drawCentredString(w/2, paper_y, "Adaptive Edge-to-Cloud Traffic Steering for")
+    c.drawCentredString(w/2, paper_y - 4*mm, "Latency-Critical Applications in Next-Generation CDN Architectures")
 
     # Award line
     award_y = paper_y - 10*mm
