@@ -8,15 +8,11 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 </head>
 <body>
-
-<div class="top-bar">
-  <div class="container top-inner">
-    <div class="brand">
-      <div class="brand-mark">DC</div>
-      <span class="brand-name">DC<span class="hl">perf</span></span>
-    </div>
-    <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-    <nav class="nav-links">
+<header class="site-hdr">
+  <div class="container hdr-inner">
+    <div class="logo"><span class="dot"></span>DC<span class="accent">perf</span></div>
+    <button class="menu-btn" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+    <nav class="nav">
       <a href="/">Home</a>
       <a href="/news/">News</a>
       <a href="/about.html" class="active">About</a>
@@ -24,19 +20,18 @@
       <a href="/icdcs.html">ICDCS</a>
     </nav>
   </div>
-</div>
+</header>
 
 <div class="container">
   <div class="page-hdr">
-    <div class="breadcrumbs"><a href="/">Home</a><span>→</span><span class="cur">About</span></div>
+    <div class="breadcrumb"><a href="/">Home</a><span>→</span><span>About</span></div>
     <h1>About the Award</h1>
-    <p class="lead">The DCperf Best Paper Award recognizes outstanding contributions to data center performance optimization, cloud-edge infrastructure, and future network architectures.</p>
+    <p class="lead">The DCperf Best Paper Award recognizes outstanding research in data center performance optimization, cloud-edge infrastructure, and future network architectures for distributed systems at global scale.</p>
   </div>
 </div>
 
-<div class="container page-wrap">
-  <main class="page-section">
-
+<div class="container content-wrap">
+  <main class="content-body">
     <h2>Background</h2>
     <p>The DCperf Best Paper Award was established to celebrate high-impact research in modern data center and cloud-edge infrastructure performance. As data centers evolve from centralized facilities to distributed multi-tier architectures spanning core data centers, regional PoPs, and edge nodes — serving AI inference, real-time analytics, content delivery, and 5G workloads — intelligent performance optimization has become essential.</p>
     <p>DCperf is held in conjunction with the <strong>IEEE International Conference on Distributed Computing Systems (ICDCS)</strong>, a premier IEEE conference since 1980, technically sponsored by the IEEE Computer Society.</p>
@@ -46,53 +41,48 @@
       <li><strong>Submission.</strong> Authors submit papers on data center performance, cloud-edge optimization, or future network architectures.</li>
       <li><strong>Peer Review.</strong> Each paper undergoes single-blind review by at least 3 TPC members.</li>
       <li><strong>Shortlisting.</strong> TPC Chairs compile a shortlist based on review scores and originality.</li>
-      <li><strong>Deliberation.</strong> The Organizing Committee selects the winning paper.</li>
+      <li><strong>Committee Deliberation.</strong> The Organizing Committee selects the winning paper through consensus.</li>
       <li><strong>Presentation.</strong> The award is conferred during the workshop with a certificate.</li>
     </ol>
 
     <h2>Evaluation Criteria</h2>
-    <p><strong>Originality</strong> — Does the paper present novel approaches to data center or cloud-edge performance optimization?</p>
-    <p><strong>Technical Rigor</strong> — Is the methodology sound? Are results validated through production-scale experiments or realistic simulation?</p>
-    <p><strong>Practical Impact</strong> — Does the work address real operational challenges in data center and edge infrastructure?</p>
-    <p><strong>Future Relevance</strong> — Does it anticipate emerging trends in AI-driven infrastructure management and next-generation architectures?</p>
-
+    <p><strong>Originality</strong> — Novel approaches to data center or cloud-edge performance optimization.</p>
+    <p><strong>Technical Rigor</strong> — Sound methodology validated through production-scale experiments or realistic simulation.</p>
+    <p><strong>Practical Impact</strong> — Addresses real operational challenges in data center and edge infrastructure.</p>
+    <p><strong>Future Relevance</strong> — Anticipates emerging trends in AI-driven infrastructure and next-generation architectures.</p>
   </main>
 
-  <aside>
-    <div class="stack-card">
-      <div class="stack-header"><span class="icon">ℹ️</span><h4>Quick Facts</h4></div>
-      <div class="stack-body">
-        <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:6px;"><strong style="color:var(--text-primary);">Workshop:</strong> DCperf 2024</p>
-        <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:6px;"><strong style="color:var(--text-primary);">Affiliation:</strong> IEEE ICDCS</p>
-        <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:6px;"><strong style="color:var(--text-primary);">Location:</strong> Jersey City, NJ, USA</p>
-        <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0;"><strong style="color:var(--text-primary);">Since:</strong> 1980 (ICDCS)</p>
+  <aside class="sidebar">
+    <div class="side-card">
+      <div class="side-hdr"><span class="icon">ℹ️</span><h4>Quick Facts</h4></div>
+      <div class="side-body">
+        <p><strong>Workshop:</strong> DCperf 2024</p>
+        <p><strong>Affiliation:</strong> IEEE ICDCS (est. 1980)</p>
+        <p><strong>Location:</strong> Jersey City, NJ, USA</p>
+        <p><strong>Award:</strong> Best Paper</p>
       </div>
     </div>
-    <div class="stack-card">
-      <div class="stack-header"><span class="icon">🔗</span><h4>Links</h4></div>
-      <div class="stack-body">
-        <p style="font-size:0.82rem;margin-bottom:4px;"><a href="https://icdcs2024.icdcs.org/">→ IEEE ICDCS 2024</a></p>
-        <p style="font-size:0.82rem;margin-bottom:4px;"><a href="https://dblp.org/db/conf/icdcs/index.html">→ ICDCS on DBLP</a></p>
-        <p style="font-size:0.82rem;margin-bottom:0;"><a href="/">← Back to Home</a></p>
+    <div class="side-card">
+      <div class="side-hdr"><span class="icon">🔗</span><h4>Links</h4></div>
+      <div class="side-body">
+        <p><a href="https://icdcs2024.icdcs.org/">→ IEEE ICDCS 2024</a></p>
+        <p><a href="https://dblp.org/db/conf/icdcs/index.html">→ ICDCS on DBLP</a></p>
+        <p><a href="/">← Back to Home</a></p>
       </div>
     </div>
   </aside>
 </div>
 
-<footer class="site-footer">
-  <div class="container">
-    <p><strong>DCperf Best Paper Award 2024</strong> — dcperf.networkofthefuture.org</p>
-  </div>
+<footer class="site-ftr">
+  <div class="container"><p><strong>DCperf Best Paper Award 2024</strong> — dcperf.networkofthefuture.org</p></div>
 </footer>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var btn = document.querySelector('.menu-btn');
-  var nav = document.querySelector('.nav-links');
+  var nav = document.querySelector('.nav');
   if (btn) btn.addEventListener('click', function() { nav.classList.toggle('open'); });
   nav.querySelectorAll('a').forEach(function(l) { l.addEventListener('click', function() { nav.classList.remove('open'); }); });
 });
 </script>
-
 </body>
 </html>
