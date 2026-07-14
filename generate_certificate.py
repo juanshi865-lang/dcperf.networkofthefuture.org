@@ -192,7 +192,7 @@ def draw_certificate(c, doc):
     date_y = label_y - 12*mm
     c.setFillColor(TEXT_MUTED)
     c.setFont("Helvetica", 7.5)
-    c.drawCentredString(w/2, date_y, "Date Conferred  |  23 July 2024")
+    c.drawCentredString(w/2, date_y, "Date Conferred  |  10 December 2024")
 
     # Footer
     footer_y = oy + 8*mm
